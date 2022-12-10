@@ -6,8 +6,8 @@
 .app {
     text-align: center;
     width: 50%;
-    /* display: inline; */
-    float: left;
+    display: inline;
+    /* float: left; */
 }
 
 textarea {
@@ -15,16 +15,21 @@ textarea {
     width: 90%;
 }
 
+#info {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 aside {
     width: 50%;
-    float: left;
-    /* display: inline; */
+    /* float: left; */
+    display: inline;
 }
 
 aside p {
     text-align: center;
-    float: left;
-    display: inline;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main {
