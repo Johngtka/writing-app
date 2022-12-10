@@ -27,16 +27,18 @@ aside {
 aside p {
     text-align: center;
     width: 100%;
-}
-
-.text {
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 200px; */
     float: left;
     display: inline;
 }
 
-.text p {
+.text {
     text-align: center;
-    width: 100%;
+    /* width: 400px;
+    margin-left: auto;
+    margin-right: auto; */
 }
 
 main {
