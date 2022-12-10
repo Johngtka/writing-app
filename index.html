@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Angular Modules "Hello World"</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        {{first + " " + second}}
+        <br>
+        <form>
+            <input placeholder={{desc}} ng-Model="textname" type="text">
+            <br>
+            <p id="d">{{textname}}</p>
+            <input type="button" value="break line">
+            <br>
+            <input type="button" value="print" onclick="window.print()">
+        </form>
+    </div>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function ($scope) {
+            $scope.first = "Hello"
+            $scope.second = "World"
+            $scope.desc = "Write Something"
+        })
+
+    </script>
+</body>
+
+</html>
