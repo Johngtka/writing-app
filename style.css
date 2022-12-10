@@ -6,10 +6,9 @@
 .app {
     text-align: center;
     width: 50%;
-    display: inline;
+    /* display: inline; */
     float: left;
-    height: calc(100%);
-    border-right: 1px solid #000000;
+    /* border-right: 1px solid #000000; */
 }
 
 textarea {
@@ -18,28 +17,29 @@ textarea {
 }
 
 aside {
-    border-left: 1px solid #000000;
+    /* border-left: 1px solid #000000; */
     width: 50%;
-    display: inline;
+    float: left;
+    /* display: inline; */
     /* height: 200px; */
 }
 
 aside p {
     text-align: center;
-    width: 100%;
-    /* margin-left: auto;
+    /* width: 100%;
+    margin-left: auto;
     margin-right: auto;
     width: 200px; */
     float: left;
     display: inline;
 }
 
-.text {
+/* .text {
     text-align: center;
-    /* width: 400px;
+    width: 400px;
     margin-left: auto;
-    margin-right: auto; */
-}
+    margin-right: auto;
+} */
 
 main {
     width: 100%;
@@ -51,6 +51,13 @@ main {
     display: none;
 }
 
-.panel {
+/* .panel {
     border: 0;
+    width: 100%;
+    text-align: center;
+} */
+
+.panel p {
+    margin-left: auto;
+    margin-right: auto;
 }

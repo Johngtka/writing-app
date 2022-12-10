@@ -7,6 +7,7 @@ app.controller("myCtrl", function ($scope) {
 function conv() {
     const hide = document.getElementById("a");
     hide.classList.add("printhide");
-    const hide1 = document.getElementById("text")
-    hide1.classList.add("panel")
+    const hide1 = document.getElementById("info")
+    hide1.style.display = "none"
+    window.print()
 }
