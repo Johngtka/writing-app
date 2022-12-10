@@ -1,0 +1,54 @@
+* {
+    font-size: 20px;
+    margin: 0;
+}
+
+.app {
+    text-align: center;
+    width: 50%;
+    display: inline;
+    float: left;
+    height: calc(100%);
+    border-right: 1px solid #000000;
+}
+
+textarea {
+    resize: vertical;
+    width: 90%;
+}
+
+aside {
+    border-left: 1px solid #000000;
+    width: 50%;
+    display: inline;
+    /* height: 200px; */
+}
+
+aside p {
+    text-align: center;
+    width: 100%;
+}
+
+.text {
+    float: left;
+    display: inline;
+}
+
+.text p {
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+.printhide {
+    /* visibility: hidden; */
+    display: none;
+}
+
+.panel {
+    border: 0;
+}
