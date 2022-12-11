@@ -8,9 +8,9 @@ app.controller("myCtrl", function ($scope) {
     $scope.mail = '<a href="mailto: example@gmail.com">example@gmail.com</a>'
     function contact() {
         var element = document.getElementById("info")
-        element.innerHTML = $scope.info + $scope.mail;
+        element.innerHTML = $scope.info + $scope.mail
     }
-    contact();
+    contact()
 })
 const btn = document.getElementById("btn")
 btn.style.display = "none"
