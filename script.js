@@ -4,7 +4,7 @@ app.controller("myCtrl", function ($scope) {
     $scope.first = "Text to PDF Saver!"
     $scope.desc = "Write Something"
     $scope.text = "Your text is writing here :-)"
-    $scope.info = 'To contact with us, write an email to:';
+    $scope.info = 'To contact with us, write an email to:'
     $scope.mail = '<a href="#">example@gmail.com</a>'
     function concat() {
         var element = document.getElementById("info")
@@ -12,11 +12,18 @@ app.controller("myCtrl", function ($scope) {
     }
     concat();
 })
+const btn = document.getElementById("btn")
+btn.style.display = "none"
 const hide = document.getElementById("a")
+const text = document.getElementById("conv")
 function conv() {
     hide.classList.add("printhide")
+    text.style.width = "100%"
+    btn.style.display = "block"
+    btn.classList.add("backbtn")
     window.print();
 }
 function unhide() {
     hide.classList.remove("printhide")
+    window.location.reload()
 }
