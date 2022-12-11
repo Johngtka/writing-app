@@ -5,9 +5,7 @@ app.controller("myCtrl", function ($scope) {
     $scope.text = "Your text is writing here :-)"
 })
 function conv() {
-    const hide = document.getElementById("a");
-    hide.classList.add("printhide");
-    const hide1 = document.getElementById("info")
-    hide1.style.display = "none"
-    window.print()
+    const hide = document.getElementById("a")
+    hide.classList.add("printhide")
+    window.print();
 }
