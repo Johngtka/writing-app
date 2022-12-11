@@ -10,22 +10,21 @@
 
 <body>
     <div ng-app="myApp" ng-controller="myCtrl">
+        <h1 style="clear: both;">{{first}}</h1>
         <main>
             <div class="app" id="a">
-                <p>{{first}}</p>
-                <br>
                 <form>
                     <textarea placeholder={{desc}} ng-Model="textname"></textarea>
                     <br>
                     <input type="button" value="print" onclick="conv()" />
                 </form>
             </div>
-            <!-- <div style="clear: both;"></div> -->
             <aside>
                 <div style="width: 100%; text-align: center;">{{text}}</div>
                 <div style="text-align: center;"><br>
                     <div id="test">{{textname}}</div>
                 </div>
+                <button onclick="unhide()">Back</button>
             </aside>
         </main>
     </div>

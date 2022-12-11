@@ -4,8 +4,11 @@ app.controller("myCtrl", function ($scope) {
     $scope.desc = "Write Something"
     $scope.text = "Your text is writing here :-)"
 })
+const hide = document.getElementById("a")
 function conv() {
-    const hide = document.getElementById("a")
     hide.classList.add("printhide")
     window.print();
+}
+function unhide() {
+    hide.classList.remove("printhide")
 }
