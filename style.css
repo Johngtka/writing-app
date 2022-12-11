@@ -12,11 +12,6 @@ h1 {
     padding-bottom: 20px;
 }
 
-
-.backbtn {
-    display: block;
-}
-
 .app {
     text-align: center;
     width: 50%;
@@ -35,7 +30,8 @@ textarea {
     width: 90%;
 }
 
-aside {
+#conv {
+    text-align: center;
     width: 50%;
     /* float: left; */
     display: inline;
@@ -43,7 +39,7 @@ aside {
     padding-bottom: 20px;
 }
 
-aside p {
+#conv p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -69,4 +65,9 @@ main {
     margin-left: auto;
     margin-right: auto;
     background-color: black;
+}
+
+#info {
+    width: 100%;
+    text-align: center;
 }

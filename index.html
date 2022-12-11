@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css">
-    <title>Angular Modules "Hello World"</title>
+    <title>TXT TO PDF</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 
@@ -19,14 +19,15 @@
                     <input type="button" value="print" onclick="conv()" />
                 </form>
             </div>
-            <aside>
+            <div id="conv">
                 <div style="width: 100%; text-align: center;">{{text}}</div>
                 <div style="text-align: center;"><br>
                     <div id="test">{{textname}}</div>
                 </div>
                 <button onclick="unhide()">Back</button>
-            </aside>
+            </div>
         </main>
+        <footer id="info"></footer>
     </div>
     <script src="script.js"></script>
 </body>
