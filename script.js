@@ -17,7 +17,6 @@ app.controller('myCtrl', function ($scope) {
 })
 // add the error message with responsive separate messages under pc and phones
 const Err = '<div id="err" class="errmsg">Error: <span id="pc">Check the console</span><span id="mobile">You must write something</span></div>';
-const hide_Msg = document.querySelector("#err")
 // the handler to main container with all part off the app
 const app_Err = document.querySelector("#content")
 // the handler to return button which is hidden on the start of page
@@ -39,12 +38,13 @@ function conv() {
         window.print()
     } else {
         // opposite
-        setTimeout(() => {
-            hide_Msg.style.display = 'none'
-        }, 1000)
         app_Err.insertAdjacentHTML('afterend', Err)
+        const hide_Msg = document.querySelector("#err")
         let msg = "You must write something"
         console.log(msg)
+        setTimeout(() => {
+            hide_Msg.style.display = 'none'
+        }, 5000)
     }
 }
 //Function to show the original view of the page
