@@ -18,8 +18,8 @@ app.controller("myCtrl", function ($scope) {
 const btn = document.getElementById("btn")
 btn.style.display = "none"
 //The handlers to left and right side of page
-const hide = document.getElementById("a")
-const text = document.getElementById("conv")
+const hide = document.getElementById("left")
+const text = document.getElementById("right")
 //function to painting window with a simple view
 function conv() {
     hide.classList.add("printhide")
