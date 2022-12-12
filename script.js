@@ -15,7 +15,7 @@ app.controller('myCtrl', function ($scope) {
     //call the function
     contact()
 })
-// add the error message with responsive separate messages under pc and phones
+//initiali the error message with responsive separate messages under pc and phones
 const Err = '<div id="err" class="errmsg">Error: <span id="pc">Check the console</span><span id="mobile">You must write something</span></div>';
 // the handler to main container with all part off the app
 const app_Err = document.querySelector("#content")
@@ -25,7 +25,7 @@ returnBTN.style.display = 'none'
 //The handlers to left and right side of page
 const hiden_element = document.querySelector('#left')
 const text_element = document.querySelector('#right')
-// handlers to textarea
+// handler to textarea
 const text_Space = document.querySelector('#enter')
 //Function to hide the left side of the page and print the screen along with the corresponding page view
 function conv() {
