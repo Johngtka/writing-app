@@ -15,15 +15,22 @@ app.controller('myCtrl', function ($scope) {
     //call the function
     contact()
 })
+// add the error message with responsive separate messages under pc and phones
+const Err = '<div id="err" class="errmsg">Error: <span id="pc">Check the console</span><span id="mobile">You must write something</span></div>';
+const hide_Msg = document.querySelector("#err")
+// the handler to main container with all part off the app
+const app_Err = document.querySelector("#content")
 // the handler to return button which is hidden on the start of page
 const returnBTN = document.querySelector('#btn')
 returnBTN.style.display = 'none'
 //The handlers to left and right side of page
 const hiden_element = document.querySelector('#left')
 const text_element = document.querySelector('#right')
-//Function to hide the left side of the page and print the screen along with the corresponding page view
+// handlers to textarea
 const text_Space = document.querySelector('#enter')
+//Function to hide the left side of the page and print the screen along with the corresponding page view
 function conv() {
+    // A condition that checks if there is any value in the textarea
     if (text_Space.value) {
         hiden_element.classList.add('printhide')
         text_element.style.width = '100%'
@@ -31,7 +38,13 @@ function conv() {
         returnBTN.classList.add('backbtn')
         window.print()
     } else {
-        alert("Write Text into textarea!!!")
+        // opposite
+        setTimeout(() => {
+            hide_Msg.style.display = 'none'
+        }, 1000)
+        app_Err.insertAdjacentHTML('afterend', Err)
+        let msg = "You must write something"
+        console.log(msg)
     }
 }
 //Function to show the original view of the page
