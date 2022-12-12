@@ -35,7 +35,7 @@ textarea {
     margin-right: auto;
 }
 
-#conv {
+#right {
     text-align: center;
     width: 50%;
     /* float: left; */
@@ -44,7 +44,7 @@ textarea {
     padding-bottom: 20px;
 }
 
-#conv p {
+#right p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
