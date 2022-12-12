@@ -7,7 +7,7 @@ app.controller("myCtrl", function ($scope) {
     $scope.text = "Your text is writing here :-)"
     $scope.info = 'To contact with us, write an email to:'
     $scope.mail = '<a href="mailto: example@gmail.com">example@gmail.com</a>'
-//function to show on UI(user interface) information about contact
+//Function to show contact info in footer
     function contact() {
         var element = document.getElementById("info")
         element.innerHTML = $scope.info + $scope.mail
