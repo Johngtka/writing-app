@@ -10,11 +10,11 @@
 
 <body>
     <div ng-app="myApp" ng-controller="myCtrl">
-        <h1>{{first}}</h1>
+        <h1>{{title}}</h1>
         <main>
             <div class="app" id="left">
                 <form>
-                    <textarea placeholder={{desc}} ng-Model="textname"></textarea>
+                    <textarea id="enter" placeholder={{desc}} ng-Model="textname"></textarea>
                     <br>
                     <input type="button" value="print" onclick="conv()" />
                 </form>
