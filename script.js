@@ -15,13 +15,12 @@ app.controller("myCtrl", function ($scope) {
     //call the function
     contact()
 }) 
-//handler to button and turn off his visibility
 const btn = document.getElementById("btn")
 btn.style.display = "none"
 //The handlers to left and right side of page
 const hide = document.getElementById("left")
 const text = document.getElementById("right")
-//function to painting window with a simple view
+//Function to hide the left side of the page and print the screen along with the corresponding page view
 function conv() {
     hide.classList.add("printhide")
     text.style.width = "100%"
