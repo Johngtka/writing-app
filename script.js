@@ -11,9 +11,11 @@ app.controller("myCtrl", function ($scope) {
         element.innerHTML = $scope.info + $scope.mail
     }
     contact()
-})
+}) 
+//handler to button and turn off his visibility
 const btn = document.getElementById("btn")
 btn.style.display = "none"
+//the hamdlers to left and right side 
 const hide = document.getElementById("a")
 const text = document.getElementById("conv")
 function conv() {
