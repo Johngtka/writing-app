@@ -1,7 +1,7 @@
 var app = angular.module("myApp", []);
 
 app.controller("myCtrl", function ($scope) {
-/*variables what's add to arguments of function, the variables have a text manuals and they called in index */ 
+/*Variables after the period are assigned to function arguments and are called in index */ 
     $scope.first = "Text to PDF Saver!"
     $scope.desc = "Write Something"
     $scope.text = "Your text is writing here :-)"
