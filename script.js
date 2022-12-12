@@ -28,7 +28,7 @@ function conv() {
     btn.classList.add("backbtn")
     window.print();
 }
-//function to show the primery view of page
+//Function to show the original view of the page
 function unhide() {
     hide.classList.remove("printhide")
     window.location.reload()
