@@ -12,14 +12,14 @@
     <div ng-app="myApp" ng-controller="myCtrl">
         <h1>{{first}}</h1>
         <main>
-            <div class="app" id="a">
+            <div class="app" id="left">
                 <form>
                     <textarea placeholder={{desc}} ng-Model="textname"></textarea>
                     <br>
                     <input type="button" value="print" onclick="conv()" />
                 </form>
             </div>
-            <div id="conv">
+            <div id="right">
                 <div style="width: 100%; text-align: center;">{{text}}</div>
                 <div id="test">{{textname}}</div>
                 <button id="btn" onclick="unhide()">Back</button>
