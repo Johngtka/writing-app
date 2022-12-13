@@ -1,6 +1,6 @@
 /**
  * ? Can i please to describe this this code write in first version of angular
- * ? which is cloced in app.controller, concrete what is this
+ * ? which is clozed in app.controller, concrete what is this
  * ? And comment this code which is in variable app  
  */
 const app = angular.module('myApp', []);
