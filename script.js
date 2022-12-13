@@ -1,5 +1,9 @@
-var app = angular.module('myApp', []);
-
+/**
+ * ? Can i please to describe this part of first version of angular
+ * ? which is cloced in app.controller, concrete what is this
+ * ? And comment this code which is in variable app  
+ */
+const app = angular.module('myApp', []);
 app.controller('myCtrl', function ($scope) {
     /*Variables after the period are assigned to function arguments and are called in index */
     $scope.title = 'Text to PDF Saver!'
@@ -15,6 +19,10 @@ app.controller('myCtrl', function ($scope) {
     //call the function
     contact()
 })
+/**
+ * This part of code is declared the const variables
+ * There are the hendlers to concrete elements of app
+ */
 //initialize the error message with responsive separate messages under pc and phones
 const Err = '<div id="err" class="errmsg">Error: <span id="pc">Check the console</span><span id="mobile">You must write something</span></div>'
 // the handler to main container with all part off the app
