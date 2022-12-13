@@ -1,7 +1,7 @@
 /**
  * ? Can i please to describe this this code write in first version of angular
- * ? which is clozed in app.controller, concrete what is this
- * ? And comment this code which is in variable app  
+ * ? which is closed in app.controller, concrete what is this
+ * ? And describe this code which is in variable app  
  */
 const app = angular.module('myApp', []);
 app.controller('myCtrl', function ($scope) {
