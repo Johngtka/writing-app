@@ -32,7 +32,7 @@ app.controller('myCtrl', function ($scope) {
 })
 /**
  * This part of code is declared the const variables
- * There are the hendlers to concrete elements of app
+ * There are the handlers to concrete elements of app
  */
 //initialize the error message with responsive separate messages under pc and phones
 const Err = '<div id="err" class="errmsg">Error: <span id="pc">Check the console</span><span id="mobile">You must write something</span></div>'
