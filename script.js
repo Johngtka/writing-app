@@ -41,7 +41,9 @@ function conv() {
         app_Err.insertAdjacentHTML('afterend', Err)
         const hide_Msg = document.querySelector("#err")
         let msg = "You must write something"
-        console.log(msg)
+        for(let i=0; i<=10){
+         console.log(msg)
+        }
         setTimeout(() => {
             hide_Msg.style.display = 'none'
         }, 5000)
