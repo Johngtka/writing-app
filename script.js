@@ -15,7 +15,7 @@ app.controller('myCtrl', function ($scope) {
     //call the function
     contact()
 })
-//initiali the error message with responsive separate messages under pc and phones
+//initialize the error message with responsive separate messages under pc and phones
 const Err = '<div id="err" class="errmsg">Error: <span id="pc">Check the console</span><span id="mobile">You must write something</span></div>'
 // the handler to main container with all part off the app
 const app_Err = document.querySelector("#content")
