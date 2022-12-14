@@ -18,17 +18,6 @@ app.controller('myCtrl', function ($scope) {
     }
     //call the function
     contact()
-    /**
-     * The function what have a js calculator functionality 
-     function d(x, y) {
-        var x = 20
-        var y = 300
-        var dzialanie = x + y
-        return dzialanie
-    }
-    var mat = d()
-    console.log(mat)
-     */
 })
 /**
  * This part of code is declared the const variables
@@ -74,3 +63,12 @@ function unhide() {
     hiden_element.classList.remove('printhide')
     window.location.reload()
 }
+// window.onload = st
+// function st(x, y) {
+//     var x = 'ala ma kota'
+//     var y = x.length
+//     var up = x.toUpperCase()
+//     var cut = x.replaceAll(' ', '')
+//     var type = [x + ' | ' + y + ' | ' + up + ' | ' + cut]
+//     console.log(x, y, up, cut, typeof type)
+// }
