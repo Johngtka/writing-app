@@ -10,6 +10,7 @@ h1 {
     font-size: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #586F6B;
 }
 
 .app {
@@ -18,16 +19,23 @@ h1 {
     display: inline;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #7F9183;
     /* float: left; */
 }
 
-/* @media(max-width: 600px) {
-  
-} */
-
 textarea {
-    resize: vertical;
+    resize: none;
     width: 90%;
+    height: 100vh;
+    color: #000;
+    font-weight: bolder;
+    font-size: 30px;
+    background-image:
+        radial-gradient(closest-side, transparent 0%, transparent 75%, #B6CC66 76%, #B6CC66 85%, #EDFFDB 86%, #EDFFDB 94%, #FFFFFF 95%, #FFFFFF 103%, #D9E6A7 104%, #D9E6A7 112%, #798B3C 113%, #798B3C 121%, #FFFFFF 122%, #FFFFFF 130%, #E0EAD7 131%, #E0EAD7 140%),
+        radial-gradient(closest-side, transparent 0%, transparent 75%, #B6CC66 76%, #B6CC66 85%, #EDFFDB 86%, #EDFFDB 94%, #FFFFFF 95%, #FFFFFF 103%, #D9E6A7 104%, #D9E6A7 112%, #798B3C 113%, #798B3C 121%, #FFFFFF 122%, #FFFFFF 130%, #E0EAD7 131%, #E0EAD7 140%);
+    background-size: 110px 110px;
+    background-color: #C8D3A7;
+    background-position: 0 0, 55px 55px;
 }
 
 .backbtn {
@@ -42,12 +50,14 @@ textarea {
     display: inline;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #B8B8AA;
 }
 
 #right p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    background-color: #B8B8AA;
 }
 
 .print {
@@ -79,23 +89,28 @@ main {
 
 #info {
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
+    background-color: #DDD5D0;
 }
 
 footer a {
     text-decoration: none;
     color: black;
-
 }
 
 .errmsg {
     margin-left: auto;
     margin-right: auto;
     z-index: 100;
+    padding-top: 20px;
+    padding-bottom: 20px;
     /* position: relative; */
     display: block;
-    width: 200px;
+    width: 100%;
     text-align: center;
+    background-color: #A2D3C2;
 }
 
 @media(max-width: 600px) {
