@@ -64,7 +64,7 @@ function unhide() {
     window.location.reload()
 }
 // window.onload = st
-// function st(x, y) {
+// function st() {
 //     var x = 'ala ma kota'
 //     var y = x.length
 //     var up = x.toUpperCase()
