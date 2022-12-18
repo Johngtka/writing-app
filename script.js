@@ -1,59 +1,78 @@
-/**
- * ? Can i please to describe this this code write in first version of angular
- * ? which is closed in app.controller, concrete what is this
- * ? And describe this code which is in variable app  
- */
+//initialize the error message with responsive separate messages under pc and phones
+const Err = '<div id="err" class="errmsg">Error: <span id="pc">Check the console</span><span id="mobile">You must write something</span></div>'
+//The handlers to left and right side of page
+const left_element = document.querySelector('#left')
+const right_element = document.querySelector('#right')
+//handler to return button
+const returnBTN = document.querySelector('#btn')
+// hide the return button at start of page
+returnBTN.style.display = 'none'
+// handler to textarea
+const text_Space = document.querySelector('#enter')
+// handler to container where must to show the number of signs in textarea
+const tex_len = document.querySelector('#txt-len')
+// the state variable(functioinal expression) with Anonymous function which return the nuber of signs in textarea 
+const kalkulator = function (x) {
+    return x
+}
 const app = angular.module('myApp', []);
 app.controller('myCtrl', function ($scope) {
-    /*Variables after the period are assigned to function arguments and are called in index */
+    // Variables after the period are store the text informations and are assigned to fuction $scope parameter and are called in index
     $scope.title = 'Text to PDF Saver!'
     $scope.desc = 'Write Something'
     $scope.text = 'Your text is writing here :-)'
     $scope.info = 'To contact with us, write an email to:'
     $scope.mail = '<a href="mailto: example@gmail.com"> example@gmail.com</a>'
-    //Function to show contact info in footer
+    // the onload method of window object is called at first time, the timing of the function set to real automatic changes with called the contact() and tl() functions  
+    window.onload = () => {
+        setInterval(tl, 1)
+        tl()
+        contact()
+    }
+    // Function to show contact info in footer
     function contact() {
-        var element = document.querySelector('#info')
+        // handler to footer in app
+        const element = document.querySelector('#info')
         element.innerHTML = $scope.info + $scope.mail
     }
-    //call the function
-    contact()
+    // Function to counting the number of signs in textarea 
+    function tl() {
+        // download the value from text area
+        let v = text_Space.value
+        // remove from v white signs
+        v = v.trim()
+        // get the length of signs 
+        v = v.length
+        // send the twice converted value as parameter of anonymous function in state variable kalkulator
+        let text = kalkulator(v)
+        // add to angular variable assigned to $scope parameter off angular controller function, the html replacement with number of signs who is called in index
+        $scope.len = tex_len.innerHTML = 'Your text have: ' + text + ' signs'
+    }
 })
-/**
- * This part of code is declared the const variables
- * There are the handlers to concrete elements of app
- */
-//initialize the error message with responsive separate messages under pc and phones
-const Err = '<div id="err" class="errmsg">Error: <span id="pc">Check the console</span><span id="mobile">You must write something</span></div>'
-// the handler to main container with all part off the app
-// const app_Err = document.querySelector("#content")
-// the handler to return button which is hidden on the start of page
-const returnBTN = document.querySelector('#btn')
-returnBTN.style.display = 'none'
-//The handlers to left and right side of page
-const hiden_element = document.querySelector('#left')
-const text_element = document.querySelector('#right')
-// handler to textarea
-const text_Space = document.querySelector('#enter')
 //Function to hide the left side of the page and print the screen along with the corresponding page view
 function conv() {
     // A condition that checks if there is any value in the textarea
     if (text_Space.value) {
-        hiden_element.classList.add('printhide')
-        text_element.style.width = '100%'
-        text_element.style.height = '800px'
+        // turn off the container with number of signs
+        tex_len.style.display = 'none'
+        // hide the left side of app
+        left_element.classList.add('printhide')
+        right_element.style.width = '100%'
+        right_element.style.height = '100vh'
+        // turn on the return button
         returnBTN.style.display = 'block'
+        // centering the return button
         returnBTN.classList.add('backbtn')
+        // make a printscreen method on all off the app
         window.print()
     } else {
         // opposite
-        text_element.insertAdjacentHTML('beforeend', Err)
+        right_element.insertAdjacentHTML('beforeend', Err)
+        // handler to container with error message
         const hide_Msg = document.querySelector("#err")
         let msg = "You must write something"
-        // for (let i = 1; i <= 10; i++) {
-        //     console.log(msg)
-        // }
         console.log(msg)
+        // turn off the error message in range 5 seconds
         setTimeout(() => {
             hide_Msg.style.display = 'none'
         }, 5000)
@@ -61,15 +80,8 @@ function conv() {
 }
 //Function to show the original view of the page
 function unhide() {
-    hiden_element.classList.remove('printhide')
+    // turn on the left side off app
+    left_element.classList.remove('printhide')
+    // make reload method on app
     window.location.reload()
 }
-// window.onload = st
-// function st() {
-//     var x = 'ala ma kota'
-//     var y = x.length
-//     var up = x.toUpperCase()
-//     var cut = x.replaceAll(' ', '')
-//     var type = [x + ' | ' + y + ' | ' + up + ' | ' + cut]
-//     console.log(x, y, up, cut, typeof type)
-// }
