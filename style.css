@@ -79,12 +79,13 @@ main {
     margin-right: auto;
 }
 
-#test {
+.test1 {
     color: #fff;
-    width: 100%;
+    width: 50%;
+    height: 90vh;
     margin-left: auto;
     margin-right: auto;
-    background-color: black;
+    background-color: #000;
 }
 
 #info {

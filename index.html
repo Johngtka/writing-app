@@ -11,18 +11,17 @@
 <body>
     <div ng-app="myApp" ng-controller="myCtrl">
         <h1>{{title}}</h1>
-        <main id="content">
+        <main>
             <div class="app" id="left">
                 <form>
                     <textarea id="enter" placeholder={{desc}}... ng-Model="textname"></textarea>
-                    <br>
-                    <input type="button" value="print" onclick="conv()" />
                 </form>
             </div>
             <div id="right">
                 <div style="width: 100%; text-align: center;">{{text}}</div>
-                <div id="test">{{textname}}</div>
+                <div id="test" style="background-color: #000; color:#fff;">{{textname}}</div>
                 <div id="txt-len">{{len}}</div>
+                <input type="button" value="print" id="print" onclick="conv()" />
                 <button id="btn" onclick="unhide()">Back</button>
             </div>
         </main>

@@ -11,6 +11,10 @@ returnBTN.style.display = 'none'
 const text_Space = document.querySelector('#enter')
 // handler to container where must to show the number of signs in textarea
 const tex_len = document.querySelector('#txt-len')
+// handler to space of showing text when you write
+const your_txt = document.querySelector('#test')
+// handler to print button
+const printBTN = document.querySelector('#print')
 // the state variable(functioinal expression) with Anonymous function which return the nuber of signs in textarea 
 const kalkulator = function (x) {
     return x
@@ -55,6 +59,7 @@ function conv() {
     if (text_Space.value) {
         // turn off the container with number of signs
         tex_len.style.display = 'none'
+        printBTN.style.display = 'none'
         // hide the left side of app
         left_element.classList.add('printhide')
         right_element.style.width = '100%'
@@ -64,6 +69,7 @@ function conv() {
         // centering the return button
         returnBTN.classList.add('backbtn')
         // make a printscreen method on all off the app
+        your_txt.classList.add('test1')
         window.print()
     } else {
         // opposite
