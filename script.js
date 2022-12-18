@@ -21,7 +21,7 @@ const kalkulator = function (x) {
 }
 const app = angular.module('myApp', []);
 app.controller('myCtrl', function ($scope) {
-    // Variables after the period are store the text informations and are assigned to fuction $scope parameter and are called in index
+    // Variables after the period are store the text informations and are assigned to function $scope parameter and are called in index
     $scope.title = 'Text to PDF Saver!'
     $scope.desc = 'Write Something'
     $scope.text = 'Your text is writing here :-)'
@@ -39,15 +39,15 @@ app.controller('myCtrl', function ($scope) {
         const element = document.querySelector('#info')
         element.innerHTML = $scope.info + $scope.mail
     }
-    // Function to counting the number of signs in textarea 
+    // function to counting the number of signs in textarea 
     function tl() {
-        // download the value from text area
+        // download the value from textarea
         let v = text_Space.value
         // remove from v white signs
         v = v.trim()
-        // get the length of signs 
+        // get the length from v
         v = v.length
-        // send the twice converted value as parameter of anonymous function in state variable kalkulator
+        // send the twice processed value as parameter of anonymous function in state variable kalkulator
         let text = kalkulator(v)
         // add to angular variable assigned to $scope parameter off angular controller function, the html replacement with number of signs who is called in index
         $scope.len = tex_len.innerHTML = 'Your text have: ' + text + ' signs'
