@@ -5,17 +5,17 @@ const left_element = document.querySelector('#left')
 const right_element = document.querySelector('#right')
 //handler to return button
 const returnBTN = document.querySelector('#btn')
-// hide the return button at start off app
+// hide the return button at start of app
 returnBTN.style.display = 'none'
 // handler to textarea
 const text_Space = document.querySelector('#enter')
-// handler to container where must to show the number off signs in textarea
+// handler to container where must to show the number of signs in textarea
 const tex_len = document.querySelector('#txt-len')
 // handler to space of showing text when you write
 const your_txt = document.querySelector('#test')
 // handler to print button
 const printBTN = document.querySelector('#print')
-// the state variable(functioinal expression) with Anonymous function which return the nuber off signs in textarea 
+// the state variable(functioinal expression) with Anonymous function which return the nuber of signs in textarea 
 const kalkulator = function (x) {
     return x
 }
@@ -27,7 +27,7 @@ app.controller('myCtrl', function ($scope) {
     $scope.text = 'Your text is writing here :-)'
     $scope.info = 'To contact with us, write an email to:'
     $scope.mail = '<a href="mailto: example@gmail.com"> example@gmail.com</a>'
-    // the onload method off window object is calling at first time, the timing off the function set to real automatic changes with called the contact() and tl() functions  
+    // the onload method of window object is calling at first time, the timing of the function set to real automatic changes with called the contact() and tl() functions  
     window.onload = () => {
         setInterval(tl, 1)
         tl()
@@ -39,7 +39,7 @@ app.controller('myCtrl', function ($scope) {
         const element = document.querySelector('#info')
         element.innerHTML = $scope.info + $scope.mail
     }
-    // function to counting the number off signs in textarea 
+    // function to counting the number of signs in textarea 
     function tl() {
         // download the value from textarea
         let v = text_Space.value
@@ -47,13 +47,13 @@ app.controller('myCtrl', function ($scope) {
         v = v.trim()
         // get the length from v
         v = v.length
-        // send the twice processed value as parameter off anonymous function in state variable kalkulator
+        // send the twice processed value as parameter of anonymous function in state variable kalkulator
         let text = kalkulator(v)
-        // add to angular variable assigned to $scope parameter off angular controller function, the html replacement with number off signs who is called in index
-        $scope.len = tex_len.innerHTML = 'Your text have: ' + text + ' signs'
+        // add to angular variable assigned to $scope parameter of angular controller function, the html replacement with number of signs who is called in index
+        $scope.len = tex_len.innerHTML = 'Your text has: ' + text + ' signs'
     }
 })
-//function to hide the left side off the page and print the screen along with the corresponding page view
+//function to hide the left side of the page and print the screen along with the corresponding page view
 function conv() {
     // A condition that checks if there is any value in the textarea
     if (text_Space.value) {
@@ -68,7 +68,7 @@ function conv() {
         returnBTN.style.display = 'block'
         // centering the return button
         returnBTN.classList.add('backbtn')
-        // make a printscreen method on all off the app
+        // make a printscreen method on all of the app
         your_txt.classList.add('test1')
         window.print()
     } else {
@@ -84,9 +84,9 @@ function conv() {
         }, 5000)
     }
 }
-//Function to show the original view off the page
+//Function to show the original view of the page
 function unhide() {
-    // turn on the left side off app
+    // turn on the left side of app
     left_element.classList.remove('printhide')
     // make reload method on app
     window.location.reload()
